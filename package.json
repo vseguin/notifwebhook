@@ -1,0 +1,22 @@
+{
+  "name": "notifwebhook",
+  "version": "1.0.0",
+  "description": "Simple nodejs service used for webhook notifs functional tests",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vseguin/notifwebhook.git"
+  },
+  "author": "Vincent Seguin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vseguin/notifwebhook/issues"
+  },
+  "homepage": "https://github.com/vseguin/notifwebhook#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
