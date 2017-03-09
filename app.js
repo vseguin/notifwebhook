@@ -8,7 +8,7 @@ var port = process.env.PORT || 8080;
 var globalNotifications = [];
 var notificationsPerOrganization = [];
 
-var getNotifsForOrganization = function(organizationId) {
+function getNotifsForOrganization(organizationId) {
     var notifs = notificationsPerOrganization[organizationId];
     if (notifs === undefined) {
         notifs = new Array();
