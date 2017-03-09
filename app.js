@@ -1,10 +1,17 @@
 var express = require('express');
 var app = express();
 
-app.get('/', function (req, res) {
+var port = process.env.PORT || 8080;
+
+app.get('/', function(req, res) {
     res.send('Hello World!')
 });
 
-app.listen(5000, function () {
-    console.log('Server listening on port 5000.')
+app.post('/notifications', function(req, res) {
+    console.log("Received something");
+    res.sendStatus(200);
+});
+
+app.listen(port, function() {
+    console.log('Server listening.')
 });
